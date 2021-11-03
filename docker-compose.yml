@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  vscode-remote:
+    build: .
+    name: caioquirino/vscode-remote-liveshare
+    ports:
+      - "0808:0808"
+    volumes:
+     - ./data/.config:/home/code/.config
+     - ./project:/home/code/project
